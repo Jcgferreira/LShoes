@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #9D9D9D;
+}
+
+/*header*/
+.menu-hamburguer{
+    width: 32px;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+    margin-left: 316px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header, footer {
+    background-color: #221E1E;
+    color: #FFFFFF;
+    padding: 16px 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 24px;
+    margin-top: 26px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu {
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    font-size: 16px;
+    padding: 16px;
+    border-top: 2px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.logos img {
+    width: 50px;
+    height: 35px;
+    margin: 0 20px 0 20px;
+}
+
+.subMenu{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #0f024bd7;
+    border: 2px solid #000000d5;
+    border-radius: 0.5rem;
+    padding: 3px;
+    width: 150px;
+    z-index: 1;
+}
+
+.subMenu li {
+    padding-top: 15px;
+}
+
+.subMenu li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menu li:hover .subMenu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: #FFFFFF;
+}
+
+header #sobre a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header #sobre {
+    margin-right: 15px;
+}
+
+/*CARROSEL*/
+
+#carousel {
+    justify-content: center;
+    width: 717px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+#carousel img {
+    height: 212px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/*DESING FUNÇÕES*/
+.containerMenu .displayitens img{
+    width: 256px;
+    padding: 15px;
+    object-fit: cover;
+}
+
+.displayitens {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.container .displayitens li {
+    list-style: none;
+}
+
+.containerMenu h2 {
+    margin-top: 80px;
+    padding: 22px;
+    color: #FFFFFF;
+    top: 100%;
+}
+
+.containerMenu h3 {
+    padding: 22px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    top: 100%;
+}
+
+.container .displayitens li a {
+    text-decoration: none;
+    background-color: #292828;
+    padding: 10px 3px 10px 3px;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.container .displayitens p {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    font-weight: none;
+    font-style: italic;
+    border: 2px solid #221E1E;
+    border-radius: 0.5rem;
+    max-width: 90%;
+    padding: 5px;
+    min-height: 54px;
+    max-height: 54px;
+}
+
+/*SEÇÃO SOBRE*/
+#about {
+    display: flex;
+    padding: 300px auto 100px auto;
+    margin: 150px auto 70px auto;
+}
+
+#about h2, 
+#about h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 24px;
+    margin-top: 26px;
+    color: #FFFFFF;
+    max-width: 450px;
+}
+
+#about h3 {
+    font-size: 1rem;
+    border-top: 2px solid #FFFFFF;
+    padding-top: 7px;
+}
+
+#carousel2 {
+    justify-content: end;
+    width: 291px;
+    height: 204px;
+    margin: 0 auto;
+
+}
+#carousel2 img {
+    width: 291px;
+    height: 204px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/*FOOTER*/
+footer img,
+footer p {
+    height: 65px;
+    padding: 13px;
+}
+
+.container-footer{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #home{
+    color: #FFFFFF;
+    text-decoration: none;
+    border-top: 2px solid #FFFFFF;
+    padding: 3px;
+}
+
+@media screen and (max-width: 640px) {
+    html, body{
+        overflow-x: hidden;
+    }
+    /*cabeçalho*/
+    .container2 .menu {
+        display: none;
+        position: absolute;
+    }
+
+    header .menu {
+        margin: 0;
+    }
+    .menu {
+        background-color: #221E1E;
+        z-index: 1;
+        max-height: 100%;
+    }
+    /*carrosel*/
+    #carousel {
+        justify-content: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    #carousel img {
+        height: 125px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    /*CABEÇALHO*/
+    header, footer {
+        background-color: #221E1E;
+        color: #FFFFFF;
+        padding: 12px 0;
+    }
+    
+    header h1 {
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 24px;
+        margin-top: 26px;
+    }
+    
+
+    
+    .menu-hamburguer span{
+        display: block;
+    }
+
+    .logos img {
+        display: none;
+    }
+    
+    header #sobre a {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding: 20px 10px 0 0;
+    }
+
+    .menu-hamburguer{
+        margin-top: 8px;
+        }
+    /*DESING FUNÇÕES*/
+    .containerMenu .displayitens img{
+        width: 99%;
+        object-fit: cover;
+    }
+
+    .container .displayitens li {
+        list-style: none;
+        padding: auto;
+    }
+
+    .containerMenu h2 {
+        margin-top: 80px;
+        padding: 22px;
+        color: #FFFFFF;
+        top: 100%;
+    }
+
+    .containerMenu h3 {
+        padding: 22px;
+        color: #FFFFFF;
+        border-bottom: 1px solid #FFFFFF;
+        top: 100%;
+    }
+
+    .container .displayitens li a {
+        text-decoration: none;
+        background-color: #292828;
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        border-radius: 0.5rem;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    .container .displayitens p {
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        font-weight: none;
+        font-style: italic;
+        border: 2px solid #221E1E;
+        border-radius: 0.5rem;
+        max-width: 90%;
+        padding: 5px;
+        min-height: 54px;
+        max-height: 54px;
+    }
+
+    /*SOBRE O SITE*/
+    #about{
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about h2, 
+    #about h3{
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.7rem;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        color: #FFFFFF;
+    }
+
+    #about h3 {
+        margin: 3px;
+        margin-bottom: 24px;
+    }
+
+    #about #carousel2 {
+        max-height: 60%;
+        margin-bottom: 24px;
+    }
+
+    .container-footer {
+        display: block;
+    }
+
+    footer img{
+        padding: 2px;
+        height: 40px;
+        margin: 0 10px 10px 0;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .containerMenu .displayitens img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .containerMenu .displayitens p,
+    .containerMenu .displayitens a{
+        margin-left: 20px;
+    }
+
+    #about{
+        display: table;
+        justify-items: center;
+        align-items: center;
+        margin: 1px auto 70px auto;
+    }
+
+    #about h2, 
+    #about h3{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.0rem;
+        margin-bottom: 24px;
+        margin-top: 26px;
+        color: #FFFFFF;
+    }
+
+    #about h3 {
+        margin: 3px;
+        margin-bottom: 24px;
+    }
+
+    #about #carousel2 {
+        max-height: 60%;
+        margin-bottom: 24px;
+    }
+
+    footer p {
+        width: 200px;
+    }
+}
